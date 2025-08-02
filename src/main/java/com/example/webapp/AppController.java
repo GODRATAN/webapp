@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class AppController {
     @GetMapping("/add/{a}/{b}")
     public String add(@PathVariable("a") int a, @PathVariable("b") int b) {
-        return "Addition of two numbers : " + (a + b);
+        return "Don't you know the Addition of two numbers? \n <br> Addition of two numbers : " + a + " + " + b + " = " + (a + b);
+
     }
 }
